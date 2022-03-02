@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			color: white;
+			text-decoration: none;
+			font-family: sans-serif;
+		}
+		.sosmed{
+			width: 50px;
+			height: cacl(50px * 3);
+			position: fixed;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: rebeccapurple;
+		}
+		.sosmed ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.sosmed ul li{
+			height: 50px;
+			display: flex;
+			align-items: center;
+			width: 150px;
+			padding: 0 20px;
+			box-sizing: border-box;
+			transform: translateX(-100px);
+			transition-duration: 0.5s;
+			cursor:  pointer;
+		}
+		.sosmed ul li:hover{
+			transform: translateX(0);
+		}
+		.sosmed ul li.facebook{
+			background-color: #4064ac;
+		}
+		.sosmed ul li.twitter{
+			background-color: #02abf0;
+		}
+		.sosmed ul li.instagram{
+			background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+		}
+		.sosmed ul li.whatsapp{
+			background: #00a356; 
+		}
+		.sosmed ul li.gmail{
+			background: #e34133; 
+		}
+		.sosmed ul li a{
+			display: flex;
+			align-items: center;
+			width: 100%;
+			justify-content: space-between;
+			font-size: 17px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="sosmed">
+		<ul>
+			<li class="facebook">
+				<a href="">
+					<span>Facebook</span>
+					<i class="fa-brands fa-facebook-f"></i>
+				</a>
+			</li>
+			<li class="twitter">
+				<a href="">
+					<span>Twitter</span>
+					<i class="fa-brands fa-twitter"></i>
+				</a>
+			</li>
+			<li class="instagram">
+				<a href="">
+					<span>Instagram</span>
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+			</li>
+			<li class="whatsapp">
+				<a href="">
+					<span>Whatsapp</span>
+					<i class="fa-brands fa-whatsapp"></i>
+				</a>
+			</li>
+			<li class="gmail">
+				<a href="">
+					<span>Gmail</span>
+					<i class="fa-solid fa-envelope"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<script src="https://kit.fontawesome.com/d02202f823.js" crossorigin="anonymous"></script>
+</body>
+</html>
